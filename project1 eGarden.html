@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eGARDEN</title>
+    <style>
+        header{
+            display: flex;
+            align-content: center;
+        }
+        h1{
+            font-size: 3rem;
+            color: rgb(73, 1, 107);
+            padding: 3px 24px;
+            margin: auto auto;
+            text-align: center;
+        }
+        li{
+            list-style: none;
+        }
+        .navbar{
+            margin: 8px;
+            padding: 8px 30px;
+            color: rgb(104, 3, 65);
+            background-color: rgb(235, 211, 233);
+            font-size: 1.3rem;
+            display: flex;
+            column-gap: 22px;
+        }
+        .navbar span:hover{
+            cursor: pointer;
+            color: rgb(53, 15, 38);
+        }
+        .floatright {
+            margin-left: auto;
+            padding: 0px 12px;
+        }
+        input[type="search"]{
+            background-color: rgb(250, 241, 249);
+            border: 2px solid rgb(133, 37, 117);
+            border-radius: 3px;
+            height: 27px;
+            font-size: 1rem;
+            margin: 0px 0px;
+            padding: 0px 10px;
+        }
+        .products{
+            margin: 8px;
+            padding: 8px 14px;
+            display: flex;
+            justify-content: space-between;
+            color: rgb(12, 46, 90);
+            background-color: rgb(223, 226, 236);
+            font-size: 1.4rem;
+        }
+        .products li:hover{
+            cursor: pointer;
+            color: rgb(13, 28, 49);
+        }
+        .collection{
+            display: inline-grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 10px;
+            grid-auto-rows: 1fr;
+            margin: 8px;
+            color: rgb(72, 9, 102);
+            font-size: 2rem;
+            text-align: center;
+        }
+        .collection span{
+            height: 180px;
+            width: 100%;
+            display: flex;
+            margin: auto;
+            justify-content: flex-end;
+            align-items: flex-end;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .collection span:hover{
+            transform: scale(1.1);
+        }
+        footer{
+            padding: 15px;
+            padding-left: 125px;
+            padding-top: 30px;
+            margin: 8px;
+            font-size: 1.15rem;
+            background-image: url('https://images.unsplash.com/photo-1523270237992-7772a8344078?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .foot{
+            margin: 13px;
+            margin-left: auto;
+        }
+        .foot li:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>eGARDEN</h1>
+    </header>
+    <nav>
+        <div class="navbar">
+            <span>HOME</span>
+            <span>ABOUT</span>
+            <span class="floatright">
+                <input type="search" name="search" placeholder="Search for products...">
+            </span>
+            <span>BAG</span>
+            <span>ACCOUNT</span>
+        </div>
+    </nav>
+    <div class="prodcontainer">
+        <ul class="products">
+            <li>OUR PRODUCTS: </li>
+            <li>Seeds</li>
+            <li>Plant cuttings</li>
+            <li>Potted plants</li>
+            <li>Food</li>
+            <li>Pots</li>
+            <li>Tools</li>
+            <li>Hangers</li>
+        </ul>
+    </div>
+    <div class="collection">
+        <span class="flowers">Love FLOWERS? Take a look...</span>
+        <span class="flowers" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Mj0hLznyplXLJSfzoBqxZVQzstfYhmG4zw&usqp=CAU');">ROSES</span>
+        <span class="flowers" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGIXhQfcr9WSlv_TyACjaoQJ6cBpeJsFMryQ&usqp=CAU');">ORCHIDS</span>
+        <span class="flowers" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDtDpyg2pkQ6sr2pweDP513R5shO0EKzSpTQ&usqp=CAU');">TULIPS</span>
+        <span class="veggies">Everything you need for your little KITCHEN GARDEN...</span>
+        <span class="veggies" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmQcF1yHZ_Oli-k-mo7Rnl4MT3FiXUEVZbzw&usqp=CAU');">TOMATOES</span>
+        <span class="veggies" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcxOxP8y9NM8VQLckZBf4Gkh4m_KKe75SAig&usqp=CAU');">CARROTS</span>
+        <span class="veggies" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRbB8E9Psv20Pe3oQr7rfRGCPixMNjgMxrbQ&usqp=CAU');">EGGPLANTS</span>
+        <span class="fruits">Love fresh and organic FRUITS? Well, grow some...</span>
+        <span class="fruits" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu5u7QiK5baHokQpcP6kD4y26Qdha63XtdKw&usqp=CAU');">MANGOES</span>
+        <span class="fruits" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdTq1PKLsqCySay_NNRFodxEI6U6V2XZcnjg&usqp=CAU');">BANANAS</span>
+        <span class="fruits" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCBiaCIpHm7SAhYI282STyuAufAmwpQ7znJA&usqp=CAU');">COCONUT</span>
+        <span class="immunity">Boost your IMMUNITY in the pandemic...</span>
+        <span class="immunity" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlctw46OfP9mAFo13NiePHgCM6iJSRsN-jsA&usqp=CAU');">HALDI</span>
+        <span class="immunity" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYsXIDc9-lfStFc2LkgFtzo75BbGl-07R9SA&usqp=CAU');">TULSI</span>
+        <span class="immunity" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS36ul7yxeQbbY6q5WRspPgCVZoqif_ZmscOw&usqp=CAU');">GINGER</span>
+        <span class="winter">Check out our WINTER COLLECTION for FRUITS, VEGGIES and MORE...</span>
+        <span class="winter" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6G1XdbIb8e8SCRIOz_iVCiS84xhpe0tvH7A&usqp=CAU');">MINI GREENHOUSES</span>
+        <span class="winter" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY-m5_LiOCpBd--W1IdE2kfLHX_6Kk-eUVVA&usqp=CAU');">ORANGE</span>
+        <span class="winter" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMWyfbv8knNIneCRzYs4BVWdUh8pApbE7iHQ&usqp=CAU');">CAULIFLOWER SEEDS</span>
+        <span class="tools">Gardening TOOLS for the LOWEST PRICES...</span>
+        <span class="tools" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ97ST6JCwMEqVOR3bgy7OGkJ335INU227V8Q&usqp=CAU');">WATERING CANS</span>
+        <span class="tools" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCzqKDPMkzz8lJdPMipfShwomTQAR_4zE47w&usqp=CAU');">MINI SHOVELS</span>
+        <span class="tools" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKz9bl_xG8KvbOx3yQqgt88AGFCKO26eholg&usqp=CAU');">PLANTERS</span>
+        <span class="food">Flowerless and withering plants? They just need some FOOD...</span>
+        <span class="food" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcPP5ewlTbGfcx2Sw_benADkxaEexSkAxNWg&usqp=CAU');">SEA SALT</span>
+        <span class="food" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFKXqtXJMZgeAu1gVGu-wZZI01e_QJCbsJHQ&usqp=CAU');">MANURE</span>
+        <span class="food" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ1WIRl33RgQYrxB-KVwqyrBVoSVZwC847HQ&usqp=CAU');">ORGANIC INSECTICIDES</span>
+    </div>
+    <footer>
+        <div>&copy; eGARDEN 2022</div>
+        <div class="foot">
+            <li>Blog</li>
+            <li>Contact</li>
+            <li>Return and refund</li>
+            <li>Privacy policy</li>
+            <li>FAQs</li>
+        </div>
+    </footer>
+</body>
+</html>
